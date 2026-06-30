@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Kompass – Mitarbeiter führen. Talente entwickeln. Zukunft gestalten.</title>
+  <meta name="description" content="HR Kompass ist die moderne HR-Software für Talentmanagement, Performance und Mitarbeiterentwicklung. Vertraut von über 500 Unternehmen im DACH-Raum." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%231E3A8A' stroke-width='2'/%3E%3Cpolygon points='12,5 14,12 12,19 10,12' fill='%23F97316'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body class="bg-white text-slate-800">
+
+  <!-- =========== HEADER =========== -->
+  <header class="hk-header" role="banner">
+    <div class="hk-container flex items-center justify-between py-4">
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="HR Kompass Startseite">
+        <svg width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="#1E3A8A" stroke-width="2" fill="white"/>
+          <circle cx="20" cy="20" r="2" fill="#1E3A8A"/>
+          <polygon points="20,6 23,20 20,34 17,20" fill="#F97316"/>
+          <polygon points="20,6 23,20 20,20" fill="#C2410C"/>
+        </svg>
+        <span class="text-lg font-bold tracking-tight text-slate-900">HR <span class="text-[color:var(--color-primary)]">Kompass</span></span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Hauptnavigation">
+        <a href="produkt.html" class="hk-nav-link" data-nav-link>Produkt</a>
+        <a href="loesungen.html" class="hk-nav-link" data-nav-link>Lösungen</a>
+        <a href="ueber-uns.html" class="hk-nav-link" data-nav-link>Über uns</a>
+        <a href="ressourcen.html" class="hk-nav-link" data-nav-link>Ressourcen</a>
+        <a href="kontakt.html" class="hk-nav-link" data-nav-link>Kontakt</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="kontakt.html" class="hk-btn hk-btn-ghost">Anmelden</a>
+        <a href="kontakt.html" class="hk-btn hk-btn-primary">
+          Demo anfragen
+          <i data-lucide="arrow-right" data-icon class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <button class="lg:hidden p-2 rounded-md text-slate-700 hover:bg-slate-100" data-mobile-toggle aria-expanded="false" aria-controls="hk-mobile-menu" aria-label="Menü öffnen">
+        <i data-lucide="menu" data-icon class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <div id="hk-mobile-menu" class="hk-mobile-menu lg:hidden" data-mobile-menu>
+      <a href="produkt.html">Produkt</a>
+      <a href="loesungen.html">Lösungen</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="ressourcen.html">Ressourcen</a>
+      <a href="kontakt.html">Kontakt</a>
+      <div class="p-4">
+        <a href="kontakt.html" class="hk-btn hk-btn-primary w-full">Demo anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========== HERO =========== -->
+    <section class="hk-hero-bg">
+      <div class="hk-container py-16 md:py-24 grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6">
+          <span class="hk-eyebrow hk-reveal">HR-Software aus Deutschland</span>
+          <h1 class="hk-h1 mt-5 hk-reveal">Mitarbeiter führen.<br/>Talente entwickeln.<br/><span class="text-[color:var(--color-primary)]">Zukunft gestalten.</span></h1>
+          <p class="hk-lead mt-6 max-w-xl hk-reveal">
+            HR Kompass vereint Talentmanagement, Performance und Mitarbeiterentwicklung in einer modernen Plattform – DSGVO-konform, intuitiv und skalierbar für mittelständische Unternehmen und Konzerne.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3 hk-reveal">
+            <a href="kontakt.html" class="hk-btn hk-btn-primary">
+              Demo anfragen
+              <i data-lucide="arrow-right" data-icon class="w-4 h-4"></i>
+            </a>
+            <a href="#features" class="hk-btn hk-btn-ghost">
+              Mehr erfahren
+              <i data-lucide="play" data-icon class="w-4 h-4"></i>
+            </a>
+          </div>
+          <div class="mt-8 flex items-center gap-6 text-sm text-slate-500 hk-reveal">
+            <div class="flex items-center gap-2"><i data-lucide="shield-check" data-icon class="w-4 h-4 text-[color:var(--color-primary)]"></i> DSGVO-konform</div>
+            <div class="flex items-center gap-2"><i data-lucide="server" data-icon class="w-4 h-4 text-[color:var(--color-primary)]"></i> Hosting in Deutschland</div>
+            <div class="flex items-center gap-2"><i data-lucide="award" data-icon class="w-4 h-4 text-[color:var(--color-primary)]"></i> ISO 27001</div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 hk-reveal">
+          <!-- Dashboard Mockup SVG -->
+          <div class="relative">
+            <div class="absolute -inset-6 bg-gradient-to-tr from-blue-200/40 via-white to-orange-100/40 rounded-3xl blur-2xl"></div>
+            <svg viewBox="0 0 600 420" class="relative w-full h-auto drop-shadow-xl" role="img" aria-label="HR Kompass Dashboard-Vorschau">
+              <defs>
+                <linearGradient id="dashGrad" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#f1f5f9"/>
+                </linearGradient>
+              </defs>
+              <rect x="20" y="20" width="560" height="380" rx="18" fill="url(#dashGrad)" stroke="#e2e8f0"/>
+              <!-- Top bar -->
+              <rect x="20" y="20" width="560" height="44" rx="18" fill="#1E3A8A"/>
+              <circle cx="44" cy="42" r="5" fill="#F97316"/>
+              <circle cx="60" cy="42" r="5" fill="#fbbf24"/>
+              <circle cx="76" cy="42" r="5" fill="#34d399"/>
+              <rect x="240" y="34" width="180" height="16" rx="8" fill="rgba(255,255,255,.18)"/>
+              <!-- Sidebar -->
+              <rect x="20" y="64" width="120" height="336" fill="#f8fafc"/>
+              <rect x="36" y="84" width="88" height="12" rx="6" fill="#cbd5e1"/>
+              <rect x="36" y="108" width="60" height="10" rx="5" fill="#e2e8f0"/>
+              <rect x="36" y="128" width="80" height="10" rx="5" fill="#e2e8f0"/>
+              <rect x="36" y="148" width="70" height="10" rx="5" fill="#1E3A8A"/>
+              <rect x="36" y="168" width="78" height="10" rx="5" fill="#e2e8f0"/>
+              <rect x="36" y="188" width="50" height="10" rx="5" fill="#e2e8f0"/>
+              <!-- Cards -->
+              <rect x="160" y="84" width="130" height="80" rx="10" fill="#fff" stroke="#e2e8f0"/>
+              <text x="172" y="108" font-family="Inter" font-size="11" fill="#64748b">Mitarbeiter</text>
+              <text x="172" y="138" font-family="Inter" font-size="22" font-weight="700" fill="#0f172a">1.248</text>
+              <rect x="172" y="146" width="60" height="6" rx="3" fill="#bbf7d0"/>
+              <rect x="302" y="84" width="130" height="80" rx="10" fill="#fff" stroke="#e2e8f0"/>
+              <text x="314" y="108" font-family="Inter" font-size="11" fill="#64748b">Offene Stellen</text>
+              <text x="314" y="138" font-family="Inter" font-size="22" font-weight="700" fill="#0f172a">37</text>
+              <rect x="314" y="146" width="40" height="6" rx="3" fill="#fed7aa"/>
+              <rect x="444" y="84" width="120" height="80" rx="10" fill="#1E3A8A"/>
+              <text x="456" y="108" font-family="Inter" font-size="11" fill="#bfdbfe">Zufriedenheit</text>
+              <text x="456" y="138" font-family="Inter" font-size="22" font-weight="700" fill="#fff">98%</text>
+              <!-- Chart -->
+              <rect x="160" y="180" width="404" height="200" rx="10" fill="#fff" stroke="#e2e8f0"/>
+              <text x="180" y="206" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Mitarbeiterentwicklung</text>
+              <polyline points="180,340 220,300 260,310 300,260 340,270 380,220 420,230 460,180 500,200 540,160" fill="none" stroke="#1E3A8A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="180,360 220,340 260,330 300,300 340,310 380,280 420,290 460,250 500,260 540,230" fill="none" stroke="#F97316" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4"/>
+              <g font-family="Inter" font-size="10" fill="#94a3b8">
+                <text x="180" y="395">Jan</text>
+                <text x="260" y="395">Apr</text>
+                <text x="340" y="395">Jul</text>
+                <text x="420" y="395">Okt</text>
+                <text x="500" y="395">Dez</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== LOGO CLOUD =========== -->
+    <section class="hk-section-tight border-y border-slate-100 bg-white">
+      <div class="hk-container">
+        <p class="text-center text-sm uppercase tracking-wider text-slate-500 mb-6">Vertraut von über 500 Unternehmen</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+          <span class="hk-logo-text text-center">NORDWIND AG</span>
+          <span class="hk-logo-text text-center">Schreiner&amp;Co.</span>
+          <span class="hk-logo-text text-center">VIVANTIS</span>
+          <span class="hk-logo-text text-center">MOBIL+WERK</span>
+          <span class="hk-logo-text text-center">Carolus GmbH</span>
+          <span class="hk-logo-text text-center">ECOFLOW</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== DREI-SPALTEN: KERNBEREICHE =========== -->
+    <section id="features" class="hk-section">
+      <div class="hk-container">
+        <div class="max-w-2xl mx-auto text-center hk-reveal">
+          <span class="hk-eyebrow">Plattform</span>
+          <h2 class="hk-h2 mt-4">Eine HR-Lösung. Drei zentrale Disziplinen.</h2>
+          <p class="hk-lead mt-4">Bringen Sie Recruiting, Performance und Entwicklung in einem konsistenten System zusammen – ohne Insellösungen, ohne Datensilos.</p>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+          <article class="hk-card hk-reveal">
+            <div class="hk-card-icon"><i data-lucide="users" data-icon></i></div>
+            <h3 class="hk-h3">Talentmanagement</h3>
+            <p class="mt-2 text-slate-600">Strukturiertes Recruiting, Onboarding und Nachfolgeplanung – mit klaren Workflows von der Bewerbung bis zur Schlüsselposition.</p>
+            <a href="produkt.html" class="mt-4 inline-flex items-center gap-1 text-[color:var(--color-primary)] font-semibold hover:gap-2 transition-all">Mehr erfahren <i data-lucide="arrow-right" data-icon class="w-4 h-4"></i></a>
+          </article>
+
+          <article class="hk-card hk-reveal">
+            <div class="hk-card-icon accent"><i data-lucide="trending-up" data-icon></i></div>
+            <h3 class="hk-h3">Performance</h3>
+            <p class="mt-2 text-slate-600">Zielvereinbarungen, kontinuierliches Feedback und 360°-Beurteilungen, die Führungskräften echte Entscheidungsgrundlagen liefern.</p>
+            <a href="produkt.html" class="mt-4 inline-flex items-center gap-1 text-[color:var(--color-primary)] font-semibold hover:gap-2 transition-all">Mehr erfahren <i data-lucide="arrow-right" data-icon class="w-4 h-4"></i></a>
+          </article>
+
+          <article class="hk-card hk-reveal">
+            <div class="hk-card-icon"><i data-lucide="graduation-cap" data-icon></i></div>
+            <h3 class="hk-h3">Mitarbeiterentwicklung</h3>
+            <p class="mt-2 text-slate-600">Individuelle Lernpfade, kuratierte Inhalte und transparente Kompetenzmodelle – damit Wachstum messbar wird.</p>
+            <a href="produkt.html" class="mt-4 inline-flex items-center gap-1 text-[color:var(--color-primary)] font-semibold hover:gap-2 transition-all">Mehr erfahren <i data-lucide="arrow-right" data-icon class="w-4 h-4"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== ALTERNIERENDE FEATURE-BLÖCKE =========== -->
+    <section class="hk-section hk-section-alt">
+      <div class="hk-container space-y-20 md:space-y-28">
+
+        <!-- Block 1 -->
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div class="hk-reveal">
+            <span class="hk-eyebrow">Recruiting neu gedacht</span>
+            <h3 class="hk-h2 mt-4">Stellen besetzen, ohne Prozesse zu verlangsamen.</h3>
+            <p class="mt-4 hk-lead">Automatisierte Stellenausschreibungen, KI-gestützte Vorauswahl und ein zentrales Bewerbungs-Cockpit – Ihr Recruiting-Team gewinnt Zeit für das, was wirklich zählt: das Gespräch mit den Menschen.</p>
+            <ul class="hk-feature-list mt-6">
+              <li>Multiposting auf 30+ Jobbörsen</li>
+              <li>Strukturierte Interview-Leitfäden</li>
+              <li>Bewerber-Kommunikation aus einem Tool</li>
+            </ul>
+          </div>
+          <div class="hk-reveal">
+            <svg viewBox="0 0 520 360" class="w-full" role="img" aria-label="Bewerbungs-Cockpit Mockup">
+              <rect x="0" y="0" width="520" height="360" rx="20" fill="#fff" stroke="#e2e8f0"/>
+              <rect x="20" y="20" width="480" height="40" rx="10" fill="#f1f5f9"/>
+              <circle cx="44" cy="40" r="8" fill="#1E3A8A"/>
+              <rect x="60" y="35" width="120" height="10" rx="5" fill="#cbd5e1"/>
+              <rect x="380" y="32" width="100" height="16" rx="8" fill="#1E3A8A"/>
+              <g>
+                <rect x="20" y="80" width="480" height="60" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+                <circle cx="50" cy="110" r="16" fill="#1E3A8A"/>
+                <text x="44" y="115" font-family="Inter" font-size="12" font-weight="700" fill="#fff">AK</text>
+                <text x="80" y="106" font-family="Inter" font-size="13" font-weight="600" fill="#0f172a">Anna Kessler</text>
+                <text x="80" y="124" font-family="Inter" font-size="11" fill="#64748b">Senior Developer · Eingegangen vor 2 h</text>
+                <rect x="400" y="100" width="80" height="22" rx="11" fill="#dcfce7"/>
+                <text x="412" y="115" font-family="Inter" font-size="11" font-weight="600" fill="#15803d">Top-Match</text>
+              </g>
+              <g>
+                <rect x="20" y="150" width="480" height="60" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+                <circle cx="50" cy="180" r="16" fill="#F97316"/>
+                <text x="44" y="185" font-family="Inter" font-size="12" font-weight="700" fill="#fff">MS</text>
+                <text x="80" y="176" font-family="Inter" font-size="13" font-weight="600" fill="#0f172a">Markus Schmid</text>
+                <text x="80" y="194" font-family="Inter" font-size="11" fill="#64748b">UX Designer · Interview geplant</text>
+                <rect x="400" y="170" width="80" height="22" rx="11" fill="#fef3c7"/>
+                <text x="416" y="185" font-family="Inter" font-size="11" font-weight="600" fill="#b45309">In Prüfung</text>
+              </g>
+              <g>
+                <rect x="20" y="220" width="480" height="60" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+                <circle cx="50" cy="250" r="16" fill="#0f172a"/>
+                <text x="44" y="255" font-family="Inter" font-size="12" font-weight="700" fill="#fff">LB</text>
+                <text x="80" y="246" font-family="Inter" font-size="13" font-weight="600" fill="#0f172a">Laura Brandt</text>
+                <text x="80" y="264" font-family="Inter" font-size="11" fill="#64748b">Product Manager · 2. Gespräch</text>
+                <rect x="400" y="240" width="80" height="22" rx="11" fill="#dbeafe"/>
+                <text x="412" y="255" font-family="Inter" font-size="11" font-weight="600" fill="#1e40af">Finalist:in</text>
+              </g>
+              <rect x="20" y="296" width="480" height="44" rx="10" fill="#f1f5f9"/>
+              <text x="40" y="324" font-family="Inter" font-size="12" fill="#64748b">42 Bewerbungen · Ø Time-to-Hire 18 Tage</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div class="md:order-2 hk-reveal">
+            <span class="hk-eyebrow">Performance</span>
+            <h3 class="hk-h2 mt-4">Feedback, das wirkt – und nicht im Postfach versandet.</h3>
+            <p class="mt-4 hk-lead">Kontinuierliche Check-ins, klare Ziele und 360°-Feedback in einem Workflow. Führungskräfte erkennen Potenziale, Mitarbeitende sehen ihren Beitrag zum großen Ganzen.</p>
+            <ul class="hk-feature-list mt-6">
+              <li>OKR- und KPI-Tracking</li>
+              <li>Strukturierte Feedback-Zyklen</li>
+              <li>Heatmaps zu Teamstimmung</li>
+            </ul>
+          </div>
+          <div class="md:order-1 hk-reveal">
+            <svg viewBox="0 0 520 360" class="w-full" role="img" aria-label="Performance Übersicht">
+              <rect x="0" y="0" width="520" height="360" rx="20" fill="#fff" stroke="#e2e8f0"/>
+              <rect x="20" y="20" width="220" height="320" rx="14" fill="#1E3A8A"/>
+              <text x="40" y="56" font-family="Inter" font-size="14" font-weight="700" fill="#fff">Mein Quartal</text>
+              <text x="40" y="80" font-family="Inter" font-size="11" fill="#bfdbfe">Q2 / 2026</text>
+              <g font-family="Inter" font-size="12" fill="#bfdbfe">
+                <text x="40" y="120">Ziel 1 · Onboarding-Quote</text>
+                <rect x="40" y="128" width="160" height="8" rx="4" fill="rgba(255,255,255,.2)"/>
+                <rect x="40" y="128" width="120" height="8" rx="4" fill="#F97316"/>
+                <text x="40" y="156">75% erreicht</text>
+
+                <text x="40" y="190">Ziel 2 · Pulse-Rate</text>
+                <rect x="40" y="198" width="160" height="8" rx="4" fill="rgba(255,255,255,.2)"/>
+                <rect x="40" y="198" width="140" height="8" rx="4" fill="#F97316"/>
+                <text x="40" y="226">88% erreicht</text>
+
+                <text x="40" y="260">Ziel 3 · 1:1 Frequenz</text>
+                <rect x="40" y="268" width="160" height="8" rx="4" fill="rgba(255,255,255,.2)"/>
+                <rect x="40" y="268" width="90" height="8" rx="4" fill="#F97316"/>
+                <text x="40" y="296">56% erreicht</text>
+              </g>
+
+              <rect x="260" y="20" width="240" height="160" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+              <text x="280" y="48" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Teamstimmung</text>
+              <g>
+                <rect x="280" y="60" width="20" height="100" rx="4" fill="#dbeafe"/>
+                <rect x="280" y="100" width="20" height="60" rx="4" fill="#1E3A8A"/>
+                <rect x="310" y="70" width="20" height="90" rx="4" fill="#dbeafe"/>
+                <rect x="310" y="105" width="20" height="55" rx="4" fill="#1E3A8A"/>
+                <rect x="340" y="50" width="20" height="110" rx="4" fill="#dbeafe"/>
+                <rect x="340" y="80" width="20" height="80" rx="4" fill="#1E3A8A"/>
+                <rect x="370" y="65" width="20" height="95" rx="4" fill="#dbeafe"/>
+                <rect x="370" y="95" width="20" height="65" rx="4" fill="#1E3A8A"/>
+                <rect x="400" y="55" width="20" height="105" rx="4" fill="#dbeafe"/>
+                <rect x="400" y="85" width="20" height="75" rx="4" fill="#1E3A8A"/>
+                <rect x="430" y="48" width="20" height="112" rx="4" fill="#dbeafe"/>
+                <rect x="430" y="78" width="20" height="82" rx="4" fill="#F97316"/>
+              </g>
+
+              <rect x="260" y="196" width="240" height="144" rx="14" fill="#fff" stroke="#e2e8f0"/>
+              <text x="280" y="222" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Nächstes 1:1</text>
+              <circle cx="296" cy="252" r="14" fill="#F97316"/>
+              <text x="290" y="257" font-family="Inter" font-size="11" font-weight="700" fill="#fff">JR</text>
+              <text x="320" y="248" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Jonas Reiter</text>
+              <text x="320" y="264" font-family="Inter" font-size="11" fill="#64748b">Heute · 14:30</text>
+              <rect x="280" y="288" width="200" height="32" rx="8" fill="#1E3A8A"/>
+              <text x="332" y="308" font-family="Inter" font-size="12" font-weight="600" fill="#fff">Notizen vorbereiten</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div class="hk-reveal">
+            <span class="hk-eyebrow">Lernen</span>
+            <h3 class="hk-h2 mt-4">Weiterbildung als Selbstverständlichkeit.</h3>
+            <p class="mt-4 hk-lead">Persönliche Lernpfade, kuratierte Kurse und ein zentrales Skills-Inventar. So entsteht eine Lernkultur, die Talente bindet und Wandel ermöglicht.</p>
+            <ul class="hk-feature-list mt-6">
+              <li>SCORM- und xAPI-Unterstützung</li>
+              <li>Skill-Mapping und Gap-Analyse</li>
+              <li>Eigene Lerninhalte direkt im Editor</li>
+            </ul>
+          </div>
+          <div class="hk-reveal">
+            <svg viewBox="0 0 520 360" class="w-full" role="img" aria-label="Lernpfade Mockup">
+              <rect x="0" y="0" width="520" height="360" rx="20" fill="#fff" stroke="#e2e8f0"/>
+              <text x="30" y="50" font-family="Inter" font-size="14" font-weight="700" fill="#0f172a">Mein Lernpfad</text>
+              <text x="30" y="68" font-family="Inter" font-size="11" fill="#64748b">Führungskraft Junior – 4 von 6 Modulen abgeschlossen</text>
+
+              <line x1="60" y1="120" x2="60" y2="320" stroke="#e2e8f0" stroke-width="2"/>
+
+              <circle cx="60" cy="130" r="14" fill="#1E3A8A"/>
+              <text x="56" y="135" font-family="Inter" font-size="11" font-weight="700" fill="#fff">1</text>
+              <rect x="90" y="112" width="400" height="44" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+              <text x="106" y="132" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Grundlagen Führung</text>
+              <text x="106" y="148" font-family="Inter" font-size="11" fill="#15803d">Abgeschlossen</text>
+
+              <circle cx="60" cy="190" r="14" fill="#1E3A8A"/>
+              <text x="56" y="195" font-family="Inter" font-size="11" font-weight="700" fill="#fff">2</text>
+              <rect x="90" y="172" width="400" height="44" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+              <text x="106" y="192" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Kommunikation in Teams</text>
+              <text x="106" y="208" font-family="Inter" font-size="11" fill="#15803d">Abgeschlossen</text>
+
+              <circle cx="60" cy="250" r="14" fill="#F97316"/>
+              <text x="56" y="255" font-family="Inter" font-size="11" font-weight="700" fill="#fff">3</text>
+              <rect x="90" y="232" width="400" height="44" rx="10" fill="#fff7ed" stroke="#fed7aa"/>
+              <text x="106" y="252" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Konfliktmanagement</text>
+              <text x="106" y="268" font-family="Inter" font-size="11" fill="#c2410c">In Bearbeitung · 62%</text>
+
+              <circle cx="60" cy="310" r="14" fill="#cbd5e1"/>
+              <text x="56" y="315" font-family="Inter" font-size="11" font-weight="700" fill="#fff">4</text>
+              <rect x="90" y="292" width="400" height="44" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+              <text x="106" y="312" font-family="Inter" font-size="12" font-weight="600" fill="#0f172a">Mitarbeitergespräche</text>
+              <text x="106" y="328" font-family="Inter" font-size="11" fill="#64748b">Geplant für KW 32</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== STATISTIK =========== -->
+    <section class="hk-section">
+      <div class="hk-container">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="hk-reveal">
+            <div class="text-5xl font-extrabold text-[color:var(--color-primary)]">
+              <span data-counter-target="500">0</span>+
+            </div>
+            <p class="mt-2 text-slate-600 font-medium">Unternehmen vertrauen uns</p>
+          </div>
+          <div class="hk-reveal">
+            <div class="text-5xl font-extrabold text-[color:var(--color-primary)]">
+              <span data-counter-target="1" data-counter-decimals="1">0</span> Mio.
+            </div>
+            <p class="mt-2 text-slate-600 font-medium">Aktive Nutzer:innen weltweit</p>
+          </div>
+          <div class="hk-reveal">
+            <div class="text-5xl font-extrabold text-[color:var(--color-primary)]">
+              <span data-counter-target="98">0</span>%
+            </div>
+            <p class="mt-2 text-slate-600 font-medium">Kundenzufriedenheit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== TESTIMONIALS =========== -->
+    <section class="hk-section hk-section-alt">
+      <div class="hk-container">
+        <div class="max-w-2xl mx-auto text-center hk-reveal">
+          <span class="hk-eyebrow">Stimmen aus der Praxis</span>
+          <h2 class="hk-h2 mt-4">Was unsere Kund:innen sagen.</h2>
+        </div>
+
+        <div class="mt-12 max-w-3xl mx-auto" data-testimonial-slider>
+          <div class="hk-testimonial">
+            <blockquote class="text-center">
+              <p class="text-xl md:text-2xl text-slate-800 leading-relaxed">„Mit HR Kompass haben wir unsere Time-to-Hire um 32 % reduziert. Die Integration war reibungslos, die Akzeptanz im Team enorm."</p>
+              <footer class="mt-6 flex items-center justify-center gap-3">
+                <span class="w-12 h-12 rounded-full bg-[color:var(--color-primary)] text-white flex items-center justify-center font-bold">CS</span>
+                <div class="text-left">
+                  <div class="font-semibold">Claudia Sänger</div>
+                  <div class="text-sm text-slate-500">Head of People &amp; Culture, Nordwind AG</div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="hk-testimonial">
+            <blockquote class="text-center">
+              <p class="text-xl md:text-2xl text-slate-800 leading-relaxed">„Endlich eine HR-Software, die unsere Führungskräfte freiwillig nutzen. Klar im Aufbau, schnell im Alltag."</p>
+              <footer class="mt-6 flex items-center justify-center gap-3">
+                <span class="w-12 h-12 rounded-full bg-[color:var(--color-accent)] text-white flex items-center justify-center font-bold">TH</span>
+                <div class="text-left">
+                  <div class="font-semibold">Tobias Hartmann</div>
+                  <div class="text-sm text-slate-500">CHRO, VIVANTIS</div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="hk-testimonial">
+            <blockquote class="text-center">
+              <p class="text-xl md:text-2xl text-slate-800 leading-relaxed">„HR Kompass gibt uns endlich eine gemeinsame Sprache für Leistung und Entwicklung – über alle Standorte hinweg."</p>
+              <footer class="mt-6 flex items-center justify-center gap-3">
+                <span class="w-12 h-12 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold">MR</span>
+                <div class="text-left">
+                  <div class="font-semibold">Maria Roth</div>
+                  <div class="text-sm text-slate-500">HR-Direktorin, Carolus GmbH</div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="mt-8 flex items-center justify-center gap-4">
+            <button class="p-2 rounded-full border border-slate-200 hover:bg-white" data-slider-prev aria-label="Vorheriges Testimonial">
+              <i data-lucide="chevron-left" data-icon class="w-5 h-5"></i>
+            </button>
+            <div class="flex items-center gap-2">
+              <button class="hk-testimonial-dot" aria-label="Testimonial 1"></button>
+              <button class="hk-testimonial-dot" aria-label="Testimonial 2"></button>
+              <button class="hk-testimonial-dot" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="p-2 rounded-full border border-slate-200 hover:bg-white" data-slider-next aria-label="Nächstes Testimonial">
+              <i data-lucide="chevron-right" data-icon class="w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== PRICING-TEASER =========== -->
+    <section class="hk-section">
+      <div class="hk-container">
+        <div class="max-w-2xl mx-auto text-center hk-reveal">
+          <span class="hk-eyebrow">Preise</span>
+          <h2 class="hk-h2 mt-4">Flexible Pakete für jede Unternehmensgröße.</h2>
+          <p class="hk-lead mt-4">Starten Sie mit dem, was Sie heute brauchen – und skalieren Sie morgen weiter.</p>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+          <div class="hk-price-card hk-reveal">
+            <h3 class="hk-h3">Starter</h3>
+            <p class="text-slate-600 mt-2 text-sm">Für Teams bis 50 Mitarbeitende</p>
+            <div class="mt-6">
+              <span class="text-4xl font-extrabold text-slate-900">€4</span>
+              <span class="text-slate-500"> / Nutzer / Monat</span>
+            </div>
+            <ul class="hk-feature-list mt-6 mb-8">
+              <li>Digitale Personalakte</li>
+              <li>Recruiting-Basis</li>
+              <li>Self-Service Portal</li>
+              <li>E-Mail-Support</li>
+            </ul>
+            <a href="produkt.html" class="hk-btn hk-btn-outline mt-auto">Paket ansehen</a>
+          </div>
+
+          <div class="hk-price-card is-featured hk-reveal">
+            <h3 class="hk-h3">Professional</h3>
+            <p class="text-slate-600 mt-2 text-sm">Für wachsende Unternehmen</p>
+            <div class="mt-6">
+              <span class="text-4xl font-extrabold text-slate-900">€8</span>
+              <span class="text-slate-500"> / Nutzer / Monat</span>
+            </div>
+            <ul class="hk-feature-list mt-6 mb-8">
+              <li>Alles aus Starter</li>
+              <li>Performance Management</li>
+              <li>Lernpfade &amp; LMS</li>
+              <li>Mitarbeiterbefragungen</li>
+              <li>Priorisierter Support</li>
+            </ul>
+            <a href="produkt.html" class="hk-btn hk-btn-primary mt-auto">Paket ansehen</a>
+          </div>
+
+          <div class="hk-price-card hk-reveal">
+            <h3 class="hk-h3">Enterprise</h3>
+            <p class="text-slate-600 mt-2 text-sm">Für Konzerne &amp; öffentliche Hand</p>
+            <div class="mt-6">
+              <span class="text-4xl font-extrabold text-slate-900">Auf Anfrage</span>
+            </div>
+            <ul class="hk-feature-list mt-6 mb-8">
+              <li>Alles aus Professional</li>
+              <li>SSO &amp; SCIM</li>
+              <li>Eigene Workflows &amp; APIs</li>
+              <li>Dedizierter Customer Success</li>
+              <li>SLA und Auditierung</li>
+            </ul>
+            <a href="kontakt.html" class="hk-btn hk-btn-outline mt-auto">Angebot anfordern</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== CTA =========== -->
+    <section class="hk-section-tight">
+      <div class="hk-container">
+        <div class="rounded-3xl bg-gradient-to-br from-[color:var(--color-primary)] to-[color:var(--color-primary-dark)] p-10 md:p-14 text-center text-white hk-reveal">
+          <h2 class="text-3xl md:text-4xl font-bold">Bereit, HR neu zu denken?</h2>
+          <p class="mt-3 text-blue-100 max-w-xl mx-auto">Sehen Sie HR Kompass live in einer persönlichen Demo – zugeschnitten auf Ihre Anforderungen.</p>
+          <div class="mt-7 flex flex-wrap gap-3 justify-center">
+            <a href="kontakt.html" class="hk-btn hk-btn-accent">Demo anfragen <i data-lucide="arrow-right" data-icon class="w-4 h-4"></i></a>
+            <a href="produkt.html" class="hk-btn hk-btn-ghost !text-white !border-white/30 hover:!bg-white/10">Produkt ansehen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========== FOOTER =========== -->
+  <footer class="hk-footer pt-16 pb-8" role="contentinfo">
+    <div class="hk-container">
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" stroke="#fff" stroke-width="2" fill="transparent"/>
+              <circle cx="20" cy="20" r="2" fill="#fff"/>
+              <polygon points="20,6 23,20 20,34 17,20" fill="#F97316"/>
+            </svg>
+            <span class="text-lg font-bold text-white">HR Kompass</span>
+          </a>
+          <p class="mt-4 text-sm text-slate-400 max-w-sm">Mitarbeiter führen. Talente entwickeln. Zukunft gestalten. Die moderne HR-Plattform für den DACH-Raum.</p>
+          <div class="mt-6 flex items-center gap-3">
+            <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full border border-slate-700 flex items-center justify-center hover:border-white"><i data-lucide="linkedin" data-icon class="w-4 h-4"></i></a>
+            <a href="#" aria-label="XING" class="w-9 h-9 rounded-full border border-slate-700 flex items-center justify-center hover:border-white"><i data-lucide="briefcase" data-icon class="w-4 h-4"></i></a>
+            <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full border border-slate-700 flex items-center justify-center hover:border-white"><i data-lucide="youtube" data-icon class="w-4 h-4"></i></a>
+            <a href="#" aria-label="Twitter" class="w-9 h-9 rounded-full border border-slate-700 flex items-center justify-center hover:border-white"><i data-lucide="twitter" data-icon class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="hk-footer-title">Produkt</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="produkt.html">Recruiting</a></li>
+            <li><a href="produkt.html">Performance</a></li>
+            <li><a href="produkt.html">Lernmanagement</a></li>
+            <li><a href="produkt.html">Befragungen</a></li>
+            <li><a href="produkt.html">Preise</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="hk-footer-title">Unternehmen</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="loesungen.html">Branchen</a></li>
+            <li><a href="ressourcen.html">Ressourcen</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="#">Karriere</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="hk-footer-title">Rechtliches</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="#">AGB</a></li>
+            <li><a href="#">Cookie-Einstellungen</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-slate-500">© <span data-year>2026</span> HR Kompass GmbH. Alle Rechte vorbehalten.</p>
+        <p class="text-sm text-slate-500">Made with care in München · DSGVO-konform · ISO 27001</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>
